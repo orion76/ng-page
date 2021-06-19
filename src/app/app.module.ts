@@ -8,6 +8,8 @@ import {MenubarModule} from 'primeng/menubar';
 import {RouterModule} from '@angular/router';
 import {ScrollTopModule} from 'primeng/scrolltop';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {SharedModule} from 'primeng/api';
+import {MegaMenuModule} from 'primeng/megamenu';
 
 @NgModule({
   declarations: [
@@ -17,10 +19,11 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-
     MenubarModule,
+    ScrollTopModule,
     PageMainModule,
-    ScrollTopModule
+    SharedModule,
+    MegaMenuModule,
   ],
   providers: [
     // {provide: DATA_SERVICE, useClass: DataService}
