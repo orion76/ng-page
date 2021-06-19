@@ -1,0 +1,92 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+$media-desktop: 1200px;
+$media-laptop: 1025px;
+$media-tablet: 768px;
+$media-mobile: 480px;
+
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+}
+
+page-main {
+  margin: 0 1rem;
+  display: block;
+}
+
+.page-title {
+  text-align: center;
+  margin: 4rem;
+}
+
+p-divider {
+  display: block;
+  margin: 4rem;
+}
+
+.page-column {
+  min-width: 20rem;
+}
+
+@media screen and (min-width: $media-tablet) {
+  .page-column {
+    width: 45%;
+  }
+
+}
+
+.section-title {
+  text-align: center;
+}
+
+.section-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+p-card {
+  margin: 1rem;
+  width: 100%;
+
+  .p-card {
+    height: 100%;
+  }
+}
+
+
+@media screen and (min-width: $media-tablet) {
+
+  .section-content {
+    display: flex;
+    //flex-wrap:nowrap;
+    padding: 1rem;
+  }
+
+  .column-2 {
+    p-card {
+      //width: 50%
+    }
+  }
+  .column-3 {
+    p-card {
+      //width: 33.33%
+    }
+  }
+
+}
+
+.column-2 {
+  p-card {
+    //width: 100%
+  }
+}
+
+.column-3 {
+  p-card {
+    //width: 100%
+  }
+}
