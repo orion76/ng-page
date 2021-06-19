@@ -11,6 +11,10 @@ $color-black: rgba(0, 0, 0, 1);
 $color-black-transparent: rgba(0, 0, 0, 0.87);
 $color-red: rgba(255, 100, 50, 0.87);
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   margin: 0;
