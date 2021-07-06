@@ -13,13 +13,13 @@ body {
     font-size: $font-size;
   }
 }
-
-h1 {
-
+h1{
+  font-size: 1.6rem;
 }
 
 h2 {
 margin: 0 auto;
+  font-size: 1.4rem;
 }
 
 h3 {
@@ -61,35 +61,60 @@ h5 {
     .p-card-body>.p-card-subtitle {
       //border: 1px solid #ffa15f;
       //background: #ffeee4;
-      padding: 1rem 1rem 1rem 3rem;
+      padding: 1rem;
       //border-radius: .4rem;
     }
   }
 }
 
 page-main {
-  margin: 0 1rem;
+  margin: 0;
   display: block;
 }
 
 .page-title {
   text-align: center;
-  margin: 4rem;
   text-transform: uppercase;
+  margin: 1rem;
 }
 
-p-divider {
-  display: block;
-  margin: 3rem 4rem 4rem 4rem;
+
+@media screen and (min-width: $media-tablet) {
+
+  .page-title {
+
+    margin: 4rem;
+    
+  }
+  .page {
+
+    .p-card {
+      .p-card-title {
+        border-bottom: solid 1px #999;
+        margin: 0;
+        .title-content{
+          margin: 0;
+          padding: 1rem;
+          font-size: 2rem;
+        }
+      }
+      .p-card-body>.p-card-subtitle {
+        //border: 1px solid #ffa15f;
+        //background: #ffeee4;
+        padding: 1rem 1rem 1rem 3rem;
+        //border-radius: .4rem;
+      }
+    }
+  }
 }
 
-.page-column {
-  min-width: 20rem;
-}
+//.page-column {
+//  min-width: 20rem;
+//}
 
 @media screen and (min-width: $media-tablet) {
   .page-column {
-    width: 45%;
+    //width: 45%;
   }
 
 }

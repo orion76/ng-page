@@ -1,7 +1,28 @@
 .description {
-  width: 80%;
+  padding: 1rem;
   margin: 0 auto;
-  font-size: $font-size-big;
+  font-size: $font-size;
+}
+
+@media screen and (min-width: $media-tablet) {
+  .description {
+    width: 80%;
+    font-size: $font-size-big;
+  }
+  .section {
+    .section-description, .section-content {
+      width: 1200px;
+    }
+  }
+
+  .block-links {
+    .block-link {
+      font-size: 1.8rem;
+    }
+    .block-link-description {
+      margin-left: 3rem;
+    }
+  }
 }
 
 .section {
@@ -10,7 +31,7 @@
   .section-title {
     text-align: center;
     text-transform: uppercase;
-    padding: 2rem;
+    padding: 1rem;
     color: #fff;
   }
 
@@ -22,7 +43,6 @@
 
   .section-description, .section-content {
     display: block;
-    width: 1200px;
     margin: 0 auto;
   }
 
@@ -77,12 +97,12 @@
     display: block;
     padding: 1rem;
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
   .block-link-description {
     padding: 1rem;
     border-left: 3px solid #ddd;
-    margin-left: 3rem;
+    margin-left: 1rem;
   }
 }
