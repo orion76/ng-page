@@ -1,0 +1,53 @@
+
+.toolbar {
+  .p-menubar {
+    padding: 0 1rem;
+    border-radius: 0;
+    background: $color-black-transparent;
+    color: $color-white;
+    border: 1px solid $color-black-transparent;
+
+    .p-menubar-start {
+      padding: 0 3rem 0 0;
+    }
+
+    .p-menubar-root-list > .p-menuitem > .p-menuitem-link {
+      .p-menuitem-text {
+        color: $color-white;
+      }
+
+      &:not(.p-disabled):hover .p-menuitem-text {
+        color: $color-red;
+      }
+    }
+
+    .p-menubar-button {
+
+      color: $color-white;
+      position: absolute;
+      right: 2rem;
+
+      &:hover {
+        color: $color-red;
+      }
+    }
+
+  }
+
+
+}
+
+
+@media screen and (max-width: 960px) {
+  .toolbar {
+    .p-menubar {
+      .p-menubar-root-list {
+        background: $color-black-transparent;
+
+        & > .p-menuitem > .p-menuitem-link:not(.p-disabled):hover {
+          background: $color-black;
+        }
+      }
+    }
+  }
+}

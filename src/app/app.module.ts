@@ -5,11 +5,11 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {PageMainModule} from './page/page-main.module';
 import {MenubarModule} from 'primeng/menubar';
-import {RouterModule} from '@angular/router';
 import {ScrollTopModule} from 'primeng/scrolltop';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {SharedModule} from 'primeng/api';
 import {MegaMenuModule} from 'primeng/megamenu';
+import {CommonModule} from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -17,6 +17,7 @@ import {MegaMenuModule} from 'primeng/megamenu';
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     MenubarModule,
