@@ -50,7 +50,7 @@ const blocks: IBlock<ILink[]>[] = [
                   <h5>{{block.title}}</h5>
               </ng-template>
               <div *ngFor="let link of block.content">
-                  <a [href]="link.url">{{link.title}}</a>
+                  <a [href]="link.url"><i class="pi pi-link" aria-hidden="true"></i>{{link.title}}</a>
                   <div>{{link.description}}</div>
               </div>
               <ng-template pTemplate="footer">

@@ -26,22 +26,22 @@ const block1: IBlock<ILink[]> = {
     {
       title: 'Движение за прямую демократию - Я/Мы гражданин.',
       url: 'https://vk.com/ppd.komi',
-      description: 'Основная группа с социальной сети "ВКонтакте"'
+      description: 'Группа с социальной сети "ВКонтакте"'
     },
     {
       title: 'Телеграмм-чат "Территория свободы"',
       url: 'https://t.me/terrtitory_of_freedom',
-      description: 'Основной публичный чат сообщества в мессенджере "Телеграмм"'
+      description: 'Публичный чат сообщества в мессенджере "Телеграмм"'
     },
     {
       title: 'Телеграм-канал',
       url: 'https://t.me/pramayademokratia',
-      description: 'Основной телеграмм-канал'
+      description: ''
     },
     {
       title: 'ТикТок',
       url: 'https://www.tiktok.com/@pryamayademocratia',
-      description: 'Основная группа в социальной сети "ТикТок"'
+      description: 'Группа в социальной сети "ТикТок"'
     }
   ]
 };
@@ -90,7 +90,7 @@ const blocks: IBlock<ILink[]>[] = [
               <div class="block-links">
                   <h5>Движение в интернете:</h5>
                   <div *ngFor="let link of block.content" class="block-link-wrapper">
-                      <a [href]="link.url" class="block-link">{{link.title}}</a>
+                      <a [href]="link.url" class="block-link"><i class="pi pi-link" aria-hidden="true"></i>{{link.title}}</a>
                       <div class="block-link-description p-card-subtitle">{{link.description}}</div>
                   </div>
               </div>
