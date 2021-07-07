@@ -87,8 +87,8 @@ const blocks: IBlock<ILink[]>[] = [
               <ng-template pTemplate="subtitle">
                   {{block.description}}
               </ng-template>
+              <h5>Движение в интернете:</h5>
               <div class="block-links">
-                  <h5>Движение в интернете:</h5>
                   <div *ngFor="let link of block.content" class="block-link-wrapper">
                       <a [href]="link.url" class="block-link"><i class="pi pi-link" aria-hidden="true"></i>{{link.title}}</a>
                       <div class="block-link-description p-card-subtitle">{{link.description}}</div>

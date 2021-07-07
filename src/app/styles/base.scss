@@ -32,6 +32,7 @@ h4 {
 
 h5 {
   font-size: $font-size-big;
+  margin: 1rem auto;
 }
 
 
@@ -83,7 +84,7 @@ page-main {
 
   .page-title {
 
-    margin: 4rem;
+    margin: 4rem 0 1rem 0;
     
   }
   .page {
@@ -121,7 +122,6 @@ page-main {
 
 
 p-card {
-  margin: 1rem;
   width: 100%;
 
   .p-card {

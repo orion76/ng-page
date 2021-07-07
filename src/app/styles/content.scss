@@ -101,7 +101,9 @@
   }
 
   .block-link-description {
-    padding: 1rem;
+    padding: 0 1rem;
+    font-size: $font-size-small;
+    color: rgba(0, 0, 0, 0.6);
     border-left: 3px solid #ddd;
     margin-left: 1rem;
   }
